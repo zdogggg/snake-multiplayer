@@ -1,6 +1,116 @@
-canvas {
-    border: 1px solid black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#roomSetup {
-    margin-bottom: 10px;
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: #f5f5d5; /* Nền be nhạt */
+    color: #000; /* Chữ màu đen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.container {
+    text-align: center;
+    background: #fff; /* Hộp chính màu trắng */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Giảm bóng */
+}
+
+.game-title {
+    font-size: 2.5rem;
+    color: #000; /* Tiêu đề màu đen */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Giảm bóng */
+    margin-bottom: 20px;
+}
+
+.room-setup {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s, background 0.3s;
+}
+
+.btn-create {
+    background: #00ff00;
+    color: #000;
+}
+
+.btn-join {
+    background: #ff0000;
+    color: #fff;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-create:hover {
+    background: #00cc00;
+}
+
+.btn-join:hover {
+    background: #cc0000;
+}
+
+.join-room {
+    margin-top: 10px;
+}
+
+.room-input {
+    padding: 8px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    outline: none;
+    margin-right: 10px;
+}
+
+.room-input::placeholder {
+    color: #888;
+}
+
+.game-info {
+    margin: 20px 0;
+}
+
+.score {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #000; /* Điểm số màu đen */
+}
+
+.score span {
+    color: #000;
+    text-shadow: none; /* Bỏ bóng */
+}
+
+.game-canvas {
+    border: 2px solid #000; /* Viền đen */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Giảm bóng */
+    background: #e6e6fa; /* Canvas màu tím nhạt */
+}
+
+p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #000; /* Hướng dẫn màu đen */
+    text-shadow: none; /* Bỏ bóng */
 }

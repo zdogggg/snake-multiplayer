@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <title>Snake Multiplayer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="roomSetup">
-        <button onclick="createRoom()">Tạo phòng</button>
-        <input id="roomCode" placeholder="Nhập mã phòng">
-        <button onclick="joinRoom()">Tham gia</button>
+    <div class="container">
+        <h1 class="game-title">Snake Multiplayer</h1>
+        <div id="roomSetup" class="room-setup">
+            <button onclick="createRoom()" class="btn btn-create">Create Room</button>
+            <div class="join-room">
+                <input id="roomCode" placeholder="Enter Room Code" class="room-input">
+                <button onclick="joinRoom()" class="btn btn-join">Join</button>
+            </div>
+        </div>
+        <div id="gameInfo" class="game-info">
+            <p class="score">Player 1 (Blue): <span id="score1">0</span></p>
+            <p class="score">Player 2 (Red): <span id="score2">0</span></p>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400" class="game-canvas"></canvas>
     </div>
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
     <script src="game.js"></script>
 </body>
 </html>
