@@ -1,4 +1,4 @@
-const socket = new WebSocket('ws://192.168.1.11:3000');
+const socket = new WebSocket('ws://172.20.10.5:3000');
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 let playerId, snake = [], direction = 'right', gameState = {}, food = null;
